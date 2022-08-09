@@ -12,5 +12,8 @@ import com.example.jinsilslab.databinding.FragmentStoreBinding
 
 class StoreFragment : BaseFragment<FragmentStoreBinding>(R.layout.fragment_store) {
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+    }
 
 }
