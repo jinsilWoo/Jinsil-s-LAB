@@ -2,4 +2,8 @@
     <string name="app_name">Jinsil\'s LAB</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_home">홈</string>
+    <string name="menu_store">스토어</string>
+    <string name="menu_like">찜</string>
+    <string name="menu_profile">프로필</string>
 </resources>

@@ -20,7 +20,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>(R.layout.activity_main) {
 
     private lateinit var viewPager: ViewPager2
 
-    //
+
     private fun initAdapter() {
         val fragmentList =
             listOf(HomeFragment(), StoreFragment(), LikeFragment(), ProfileFragment())
@@ -32,7 +32,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>(R.layout.activity_main) {
         viewPager.adapter = viewPagerAdapter
     }
 
-    //
+
     override fun onBackPressed() {
         if (viewPager.currentItem == 0) {
             super.onBackPressed()
