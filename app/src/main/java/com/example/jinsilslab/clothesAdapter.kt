@@ -30,6 +30,6 @@ class ClothesAdapter : RecyclerView.Adapter<ClothesAdapter.ClothesViewHolder>() 
     }
 
     override fun getItemCount(): Int {
-        clothesList.size
+        return clothesList.size
     }
 }
