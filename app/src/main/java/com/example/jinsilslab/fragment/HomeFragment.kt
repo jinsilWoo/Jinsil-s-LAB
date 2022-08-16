@@ -35,6 +35,12 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(R.layout.fragment_home) {
                 ClothesData("", "이지브라운", "스퀘어 블라우스"),
                 ClothesData("", "이지브라운", "스퀘어 블라우스"),
                 ClothesData("", "메이드제이", "스퀘어 블라우스"),
+                ClothesData("", "메이드제이", "스퀘어 블라우스"),
+                ClothesData("", "이지브라운", "스퀘어 블라우스"),
+                ClothesData("", "메이드제이", "스퀘어 블라우스"),
+                ClothesData("", "메이드제이", "스퀘어 블라우스"),
+                ClothesData("", "이지브라운", "스퀘어 블라우스"),
+                ClothesData("", "메이드제이", "스퀘어 블라우스"),
                 ClothesData("", "메이드제이", "스퀘어 블라우스")
 
             )
