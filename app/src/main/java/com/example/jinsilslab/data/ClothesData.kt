@@ -1,4 +1,4 @@
-package com.example.jinsilslab
+package com.example.jinsilslab.data
 
 data class ClothesData(
     val clothes_img : String,

@@ -1,14 +1,16 @@
-package com.example.jinsilslab
+package com.example.jinsilslab.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.jinsilslab.data.ClothesData
 import com.example.jinsilslab.databinding.ItemHomeRv01Binding
 
 
 //RecyclerView.Adapter()를 상속받음, <> 안에 adapter 가 전달할 ViewHolder 클래스 작성
-class ClothesAdapter(private val data:List<ClothesData>) : RecyclerView.Adapter<ClothesAdapter.ClothesViewHolder>() {
-
+// 생성자로 데이터 넘겨줌
+class ClothesAdapter(private val data: List<ClothesData>) :
+    RecyclerView.Adapter<ClothesAdapter.ClothesViewHolder>() {
 
     class ClothesViewHolder(
         private val binding: ItemHomeRv01Binding
