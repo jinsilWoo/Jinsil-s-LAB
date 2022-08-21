@@ -33,8 +33,6 @@ class ClothesAdapter02(private var data: List<ClothesData>) :
             binding.tvClothesItemContents.text = clothesData.clothes_contents
 
         }
-
-
     }
 
 
