@@ -12,6 +12,8 @@ import com.example.jinsilslab.databinding.ItemHomeRv01Binding
 class ClothesAdapter(private val data: List<ClothesData>) :
     RecyclerView.Adapter<ClothesAdapter.ClothesViewHolder>() {
 
+
+    //view 와 data 연결
     class ClothesViewHolder(
         private val binding: ItemHomeRv01Binding
     ) : RecyclerView.ViewHolder(binding.root) {
@@ -19,7 +21,6 @@ class ClothesAdapter(private val data: List<ClothesData>) :
             binding.tvClothesItemTitle.text = clothesData.clothes_store
             binding.tvClothesItemContents.text = clothesData.clothes_contents
         }
-
     }
 
     //만들어진 뷰홀더가 없을 때 여분 뷰 홀더를 만드는 함수

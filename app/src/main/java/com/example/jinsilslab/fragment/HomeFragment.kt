@@ -1,5 +1,6 @@
 package com.example.jinsilslab.fragment
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 
 import android.view.View
@@ -23,6 +24,7 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(R.layout.fragment_home) {
         initAdapter()
     }
 
+    @SuppressLint("NotifyDataSetChanged")
     private fun initAdapter() {
         //adapter 와 recyclerView 연동
         clothesAdapter = ClothesAdapter(clothesList)
