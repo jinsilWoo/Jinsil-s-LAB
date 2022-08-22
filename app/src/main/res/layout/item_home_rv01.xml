@@ -7,7 +7,7 @@
 
     <ImageView
         android:id="@+id/iv_clothes_img"
-        android:layout_width="200dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_launcher_background"
         app:layout_constraintStart_toStartOf="parent"
@@ -19,12 +19,12 @@
         android:id="@+id/tv_clothes_item_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="5dp"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/iv_clothes_img"
         app:layout_constraintTop_toBottomOf="@+id/iv_clothes_img"
-        tools:text="오어유"
+        tools:text="스토어"
         tools:textSize="20sp" />
 
     <TextView
@@ -35,7 +35,7 @@
         android:textSize="15sp"
         app:layout_constraintStart_toStartOf="@+id/iv_clothes_img"
         app:layout_constraintTop_toBottomOf="@+id/tv_clothes_item_title"
-        tools:text="포르토 라운드 롱 원피스" />
+        tools:text="라운드 롱 원피스" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

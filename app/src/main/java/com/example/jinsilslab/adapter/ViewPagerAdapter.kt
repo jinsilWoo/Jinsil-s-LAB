@@ -1,4 +1,4 @@
-package com.example.jinsilslab
+package com.example.jinsilslab.adapter
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity

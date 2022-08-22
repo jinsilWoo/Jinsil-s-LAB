@@ -1,15 +1,19 @@
-package com.example.jinsilslab
+package com.example.jinsilslab.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.jinsilslab.data.ClothesData
 import com.example.jinsilslab.databinding.ItemHomeRv01Binding
 
 
 //RecyclerView.Adapter()를 상속받음, <> 안에 adapter 가 전달할 ViewHolder 클래스 작성
-class ClothesAdapter(private val data:List<ClothesData>) : RecyclerView.Adapter<ClothesAdapter.ClothesViewHolder>() {
+// 생성자로 데이터 넘겨줌
+class ClothesAdapter(private val data: List<ClothesData>) :
+    RecyclerView.Adapter<ClothesAdapter.ClothesViewHolder>() {
 
 
+    //view 와 data 연결
     class ClothesViewHolder(
         private val binding: ItemHomeRv01Binding
     ) : RecyclerView.ViewHolder(binding.root) {
@@ -17,7 +21,6 @@ class ClothesAdapter(private val data:List<ClothesData>) : RecyclerView.Adapter<
             binding.tvClothesItemTitle.text = clothesData.clothes_store
             binding.tvClothesItemContents.text = clothesData.clothes_contents
         }
-
     }
 
     //만들어진 뷰홀더가 없을 때 여분 뷰 홀더를 만드는 함수
