@@ -15,9 +15,8 @@ class DiffUtilCallback(private val oldList: List<Any>, private val newList: List
         val oldItem = oldList[oldItemPosition]
         val newItem = newList[newItemPosition]
 
-        return oldItem.hashCode() == newItem.hashCode()
+        return oldItem.hashCode()== newItem.hashCode()
     }
-
 
     override fun areContentsTheSame(oldItemPosition: Int, newItemPosition: Int): Boolean =
         oldList[oldItemPosition] == newList[newItemPosition]

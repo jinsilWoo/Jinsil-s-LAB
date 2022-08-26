@@ -40,21 +40,21 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(R.layout.fragment_home) {
 
         clothesList.addAll(
             listOf(
-                ClothesData("", "핫핑", "스퀘어 블라우스"),
-                ClothesData("", "키키러브", "스퀘어 블라우스"),
-                ClothesData("", "이지브라운", "스퀘어 블라우스"),
-                ClothesData("", "메이드제이", "스퀘어 블라우스"),
-                ClothesData("", "핫핑", "스퀘어 블라우스"),
-                ClothesData("", "이지브라운", "스퀘어 블라우스"),
-                ClothesData("", "이지브라운", "스퀘어 블라우스"),
-                ClothesData("", "메이드제이", "스퀘어 블라우스"),
-                ClothesData("", "메이드제이", "스퀘어 블라우스"),
-                ClothesData("", "이지브라운", "스퀘어 블라우스"),
-                ClothesData("", "메이드제이", "스퀘어 블라우스"),
-                ClothesData("", "메이드제이", "스퀘어 블라우스"),
-                ClothesData("", "이지브라운", "스퀘어 블라우스"),
-                ClothesData("", "메이드제이", "스퀘어 블라우스"),
-                ClothesData("", "메이드제이", "스퀘어 블라우스")
+                ClothesData("", "스토어1", "스퀘어 블라우스"),
+                ClothesData("", "스토어2", "스퀘어 블라우스"),
+                ClothesData("", "스토어3", "스퀘어 블라우스"),
+                ClothesData("", "스토어4", "스퀘어 블라우스"),
+                ClothesData("", "스토어5", "스퀘어 블라우스"),
+                ClothesData("", "스토어6", "스퀘어 블라우스"),
+                ClothesData("", "스토어7", "스퀘어 블라우스"),
+                ClothesData("", "스토어8", "스퀘어 블라우스"),
+                ClothesData("", "스토어9", "스퀘어 블라우스"),
+                ClothesData("", "스토어10", "스퀘어 블라우스"),
+                ClothesData("", "스토어11", "스퀘어 블라우스"),
+                ClothesData("", "스토어12", "스퀘어 블라우스"),
+                ClothesData("", "스토어13", "스퀘어 블라우스"),
+                ClothesData("", "스토어14", "스퀘어 블라우스"),
+                ClothesData("", "스토어15", "스퀘어 블라우스")
 
             )
         )
