@@ -2,12 +2,14 @@ package com.example.jinsilslab.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.recyclerview.widget.ListAdapter
+import com.example.jinsilslab.util.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.example.jinsilslab.data.ClothesData
 import com.example.jinsilslab.databinding.ItemHomeRv01Binding
 
-class ClothesAdapter02(private var data: List<ClothesData>) :
-    RecyclerView.Adapter<ClothesAdapter02.ClothesViewHolder02>() {
+class ClothesAdapter02() :
+    ListAdapter<ClothesData,ClothesAdapter02.ClothesViewHolder02>(DiffUtil<ClothesData>()) {
 
     override fun onCreateViewHolder(
         parent: ViewGroup,
@@ -19,10 +21,7 @@ class ClothesAdapter02(private var data: List<ClothesData>) :
     }
 
     override fun onBindViewHolder(holder: ClothesViewHolder02, position: Int) =
-        holder.onBind(data[position])
-
-
-    override fun getItemCount(): Int = data.size
+        holder.onBind(getItem(position))
 
 
     class ClothesViewHolder02(

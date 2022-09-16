@@ -2,12 +2,14 @@ package com.example.jinsilslab.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.jinsilslab.data.StoreData
 import com.example.jinsilslab.databinding.ItemHomeRv02Binding
+import com.example.jinsilslab.util.DiffUtil
 
-class StoreAdapter(private var data: List<StoreData>) :
-    RecyclerView.Adapter<StoreAdapter.StoreViewHolder>() {
+class StoreAdapter() :
+    ListAdapter<StoreData,StoreAdapter.StoreViewHolder>(DiffUtil<StoreData>()) {
 
     class StoreViewHolder(private val binding: ItemHomeRv02Binding) :
         RecyclerView.ViewHolder(binding.root) {
@@ -24,10 +26,7 @@ class StoreAdapter(private var data: List<StoreData>) :
     }
 
     override fun onBindViewHolder(holder: StoreViewHolder, position: Int) {
-        holder.onBind(data[position])
+        holder.onBind(getItem(position))
     }
-
-    override fun getItemCount(): Int =
-        data.size
 
 }

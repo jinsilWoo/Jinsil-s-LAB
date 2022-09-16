@@ -32,10 +32,10 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(R.layout.fragment_home) {
     @SuppressLint("NotifyDataSetChanged")
     private fun initAdapter() {
         //adapter 와 recyclerView 연동
-        clothesAdapter = ClothesAdapter(clothesList)
+        clothesAdapter = ClothesAdapter()
         binding.rvClothes.adapter = clothesAdapter
 
-        clothesAdapter02 = ClothesAdapter02(clothesList)
+        clothesAdapter02 = ClothesAdapter02()
         binding.rvClothes02.adapter = clothesAdapter02
 
         clothesList.addAll(
@@ -59,7 +59,7 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(R.layout.fragment_home) {
             )
         )
 
-        storeAdapter = StoreAdapter(storeList)
+        storeAdapter = StoreAdapter()
         binding.rvStore.adapter = storeAdapter
 
         storeList.addAll(
@@ -71,10 +71,10 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(R.layout.fragment_home) {
         )
 
 
-        clothesAdapter.notifyDataSetChanged()
-        clothesAdapter02.notifyDataSetChanged()
+        clothesAdapter.submitList(clothesList)
+        clothesAdapter02.submitList(clothesList)
 
-        storeAdapter.notifyDataSetChanged()
+        storeAdapter.submitList(storeList)
     }
 
 
