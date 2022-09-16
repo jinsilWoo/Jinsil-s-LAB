@@ -32,34 +32,34 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(R.layout.fragment_home) {
     @SuppressLint("NotifyDataSetChanged")
     private fun initAdapter() {
         //adapter 와 recyclerView 연동
-        clothesAdapter = ClothesAdapter(clothesList)
+        clothesAdapter = ClothesAdapter()
         binding.rvClothes.adapter = clothesAdapter
 
-        clothesAdapter02 = ClothesAdapter02(clothesList)
+        clothesAdapter02 = ClothesAdapter02()
         binding.rvClothes02.adapter = clothesAdapter02
 
         clothesList.addAll(
             listOf(
-                ClothesData("", "핫핑", "스퀘어 블라우스"),
-                ClothesData("", "키키러브", "스퀘어 블라우스"),
-                ClothesData("", "이지브라운", "스퀘어 블라우스"),
-                ClothesData("", "메이드제이", "스퀘어 블라우스"),
-                ClothesData("", "핫핑", "스퀘어 블라우스"),
-                ClothesData("", "이지브라운", "스퀘어 블라우스"),
-                ClothesData("", "이지브라운", "스퀘어 블라우스"),
-                ClothesData("", "메이드제이", "스퀘어 블라우스"),
-                ClothesData("", "메이드제이", "스퀘어 블라우스"),
-                ClothesData("", "이지브라운", "스퀘어 블라우스"),
-                ClothesData("", "메이드제이", "스퀘어 블라우스"),
-                ClothesData("", "메이드제이", "스퀘어 블라우스"),
-                ClothesData("", "이지브라운", "스퀘어 블라우스"),
-                ClothesData("", "메이드제이", "스퀘어 블라우스"),
-                ClothesData("", "메이드제이", "스퀘어 블라우스")
+                ClothesData("", "스토어1", "스퀘어 블라우스"),
+                ClothesData("", "스토어2", "스퀘어 블라우스"),
+                ClothesData("", "스토어3", "스퀘어 블라우스"),
+                ClothesData("", "스토어4", "스퀘어 블라우스"),
+                ClothesData("", "스토어5", "스퀘어 블라우스"),
+                ClothesData("", "스토어6", "스퀘어 블라우스"),
+                ClothesData("", "스토어7", "스퀘어 블라우스"),
+                ClothesData("", "스토어8", "스퀘어 블라우스"),
+                ClothesData("", "스토어9", "스퀘어 블라우스"),
+                ClothesData("", "스토어10", "스퀘어 블라우스"),
+                ClothesData("", "스토어11", "스퀘어 블라우스"),
+                ClothesData("", "스토어12", "스퀘어 블라우스"),
+                ClothesData("", "스토어13", "스퀘어 블라우스"),
+                ClothesData("", "스토어14", "스퀘어 블라우스"),
+                ClothesData("", "스토어15", "스퀘어 블라우스")
 
             )
         )
 
-        storeAdapter = StoreAdapter(storeList)
+        storeAdapter = StoreAdapter()
         binding.rvStore.adapter = storeAdapter
 
         storeList.addAll(
@@ -71,10 +71,10 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(R.layout.fragment_home) {
         )
 
 
-        clothesAdapter.notifyDataSetChanged()
-        clothesAdapter02.notifyDataSetChanged()
+        clothesAdapter.submitList(clothesList)
+        clothesAdapter02.submitList(clothesList)
 
-        storeAdapter.notifyDataSetChanged()
+        storeAdapter.submitList(storeList)
     }
 
 
